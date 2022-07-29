@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+var x;
+x=parseInt(window.prompt("Enter no of tickets to be booked"));
+if(x<=2){
+var amount;
+document.write("<h2 style='color:red'>");
+amount=x*150;
+document.write("Your total amount is "+amount);
+}
+else if(x>=6){
+document.write("<h2 style='color:blue'>");
+document.write("Tickets can't be booked");
+}
+else{
+var y,discamount,amount,am;
+document.write("<h2 style='color:green'>");
+amount=x*150;
+document.write("Total amount "+amount+"<br>");
+am=0.05*amount;
+discamount=amount-(0.05*amount);
+document.write("Discount amount is "+am+"<br>");
+document.write("Your total amount is "+discamount);
+}
+</script>
+</head>
+</html>
+
