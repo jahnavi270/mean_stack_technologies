@@ -1,0 +1,17 @@
+<html>
+<body>
+<h1 id="demo"></h1>
+
+<script>
+var n=parseInt(window.prompt("Enter array size","0"));
+const names=new Array(n);
+for(i=0;i<n;i++){
+names[i]=parseInt(window.prompt("Enter element","0"));
+}
+for(i=0;i<n;i++){
+document.getElementById("demo").innerHTML=names;
+//document.write(names[i]+" ");
+}
+</script>
+</body>
+</html>
