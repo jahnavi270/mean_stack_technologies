@@ -10,7 +10,21 @@ names[i]=parseInt(window.prompt("Enter element","0"));
 }
 for(i=0;i<n;i++){
 document.getElementById("demo").innerHTML=names;
-//document.write(names[i]+" ");
+max=names[0];
+for(i=0;i<n;i++){
+if(names[i]>max){
+ max=names[i];
+}
+}
+document.write("<h1>"+max+"</h1>");
+min=names[0];
+for(i=0;i<n;i++){
+if(names[i]<min){
+ min=names[i];
+}
+}
+document.write("<h1>"+min+"</h1>");
+
 }
 </script>
 </body>
