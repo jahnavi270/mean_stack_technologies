@@ -1,0 +1,33 @@
+<html>
+<body>
+<h2 id="demo"></h2>
+<h2 id="d"></h2>
+<script>
+function f1(x,y,callback){
+	//var d=new Date();
+	document.getElementById("demo").innerHTML=(x+y);
+	callback();
+callback();
+}
+function f2(callback){
+	var d=new Date();
+	document.getElementById("d").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+callback();
+	}
+function f3(){
+	for(i=0;i<5;i++){
+		document.write("<h2>"+i+"</h2>");
+
+}
+
+}
+function f4(){
+	document.write("Hello");
+}
+
+f1(3,4,f2);
+f2(f3);
+f1(4,5,f4);
+</script>
+</body>
+</html>

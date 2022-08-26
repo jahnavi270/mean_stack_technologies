@@ -1,0 +1,26 @@
+<html>
+<body>
+<h2 id="demo"></h2>
+<h2 id="demo1"></h2>
+<h2 id=demo2"></h2>
+<script>
+function f1(){
+	var d=new Date();
+	document.getElementById("demo").innerHTML=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+	}
+function f2(){
+	var i;
+	for(i=0;i<5;i++){
+		document.write("<h2>"+i+"</h2>");
+	}
+}
+function f3(a){
+		document.write("<h2>"+"Hello"+"</h2>");
+		document.write("<h2>"+a+"</h2>");
+}
+setInterval(f1,3000);
+f2();
+setTimeout(f3(45),1000);
+</script>
+</html>
+
